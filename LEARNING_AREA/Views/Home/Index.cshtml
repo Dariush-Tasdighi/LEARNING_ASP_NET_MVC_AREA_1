@@ -1,0 +1,44 @@
+﻿@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Home</title>
+</head>
+<body>
+
+	<a href="Help">Help</a>
+
+	<br />
+
+	<a href="~/Home/Help">Help</a>
+
+	<br />
+
+	@Html.ActionLink(linkText: "Help", actionName: "Help")
+
+	<br />
+
+	@Html.ActionLink(linkText: "Help", actionName: "Help", controllerName: "Home")
+
+	<br />
+
+	@*دستور ذيل غلط می‌باشد*@
+	@*@Html.ActionLink(linkText: "Users List", actionName: "List", controllerName: "User", areaName: "Administrator")*@
+
+	<br />
+
+	<a href="~/Administrator/User/List">Users List</a>
+
+	<br />
+
+	@Html.ActionLink(linkText: "Users List", actionName: "List", controllerName: "User",
+		routeValues: new { Area = "Administrator" }, htmlAttributes: null)
+
+</body>
+</html>

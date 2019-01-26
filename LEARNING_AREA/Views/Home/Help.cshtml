@@ -1,0 +1,25 @@
+﻿@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Help</title>
+</head>
+<body>
+
+	<a href="~/Home/Index">Home</a>
+
+	<br />
+
+	@Html.ActionLink(linkText: "Home", actionName: "Index")
+
+	<br />
+
+	@Html.ActionLink(linkText: "Home", actionName: "Index", controllerName: "Home")
+
+</body>
+</html>
