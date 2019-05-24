@@ -9,7 +9,7 @@
 		[System.Web.Mvc.HttpGet]
 		public System.Web.Mvc.ViewResult List()
 		{
-			return (View());
+			return View();
 		}
 	}
 }
